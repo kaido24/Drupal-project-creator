@@ -2,4 +2,4 @@
 Drupal project creation script
 
 ## Usage
-run create.sh project-name
+sh create.sh project-name
