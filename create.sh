@@ -18,9 +18,6 @@ chmod 755 composer.phar
 
 composer="php -d memory_limit=-1 $startpath/composer.phar"
 
-# Must end with a comma, be entirely on the same line, not contain @ characters, and have all [ characters escaped with \[ (Possibly even more quirks. This is going to sed.)
-composerrepos='{"type": "vcs", "url": "https://github.com/kaido24/web3_start_profile" },'
-
 # Get the project name
 projectname="$1"
 
@@ -40,7 +37,7 @@ $composer create-project drupal-composer/drupal-project:8.x-dev "$projectname" -
 
 # Install modules
 cd "$startpath/$projectname"
-	sed -i 's@"repositories": \[@\0'"$composerrepos"'@g' composer.json; # Add a repo
+	composer config repositories.repo-name vcs https://github.com/kaido24/web3_start_profile
 	$composer require drupal/devel:~1.0
 	mkdir -p web/modules/custom;
 	
