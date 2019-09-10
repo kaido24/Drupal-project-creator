@@ -50,7 +50,7 @@ cd "$startpath/$projectname"
 	
 	mkdir -p web/themes/custom
 	cd "$startpath/$projectname/web/themes/custom"
-		$downloadcommand bootstrap_subtheme_gen.sh https://raw.githubusercontent.com/kaido24/drupal8_bootstrap_subtheme_gen/master/bootstrap_subtheme_gen.sh;
-		printf "y\n""$projectname""_theme\n" | sh bootstrap_subtheme_gen.sh
+	#	$downloadcommand bootstrap_subtheme_gen.sh https://raw.githubusercontent.com/kaido24/drupal8_bootstrap_subtheme_gen/master/bootstrap_subtheme_gen.sh;
+	#	printf "y\n""$projectname""_theme\n" | sh bootstrap_subtheme_gen.sh
 
 rm "$startpath/composer.phar"
