@@ -19,7 +19,7 @@ chmod 755 composer.phar
 composer="php -d memory_limit=-1 $startpath/composer.phar"
 
 # Must end with a comma, be entirely on the same line, not contain @ characters, and have all [ characters escaped with \[ (Possibly even more quirks. This is going to sed.)
-composerrepos='{"type": "vcs", "url": "https://github.com/kaido24/web3_start_profile" },{"type": "vcs", "url": "https://github.com/kaido24/ckeditor_btgrid" },{"type": "vcs", "url": "https://github.com/kaido24/cke_bt_link_btn" },'
+composerrepos='{"type": "vcs", "url": "https://github.com/kaido24/web3_start_profile" },'
 
 # Get the project name
 projectname="$1"
