@@ -38,7 +38,7 @@ $composer create-project drupal-composer/drupal-project:8.x-dev "$projectname" -
 # Install modules
 cd "$startpath/$projectname"
 	composer config repositories.web3_start_profile vcs https://github.com/kaido24/web3_start_profile
-	$composer require drupal/devel:~1.0
+	$composer require drupal/devel
 	mkdir -p web/modules/custom;
 	
 	for i in $drupalcomposermodules;
