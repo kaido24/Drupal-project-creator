@@ -25,7 +25,7 @@ fi;
 # Create a new project
 echo Creating a new project "$projectname"
 
-$composer create-project drupal-composer/drupal-project:8.x-dev "$projectname" --no-interaction --stability dev
+$composer create-project drupal-composer/drupal-project:9.x-dev "$projectname" --no-interaction --stability dev
 
 # Install modules
 cd "$startpath/$projectname"
